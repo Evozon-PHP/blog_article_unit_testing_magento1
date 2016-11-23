@@ -1,0 +1,19 @@
+"note contains just plain text no new lines":
+  - "This is the note content"
+  - "expectation_1"
+
+"note contains just plain text with new lines":
+  - |
+    This is the note content
+    This is the second line
+  - "expectation_2"
+
+"note contains html all on one line":
+  - "<p>Hey there <b>people</b>, how are you?</p>"
+  - "expectation_3"
+
+"note contains html with new lines":
+  - |
+    <p>This is the note content</p>
+    This <b>is</b> the second line
+  - "expectation_4"

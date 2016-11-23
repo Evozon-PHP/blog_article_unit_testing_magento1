@@ -1,0 +1,15 @@
+expectation_1:
+  expected_content: "This is the note content"
+
+expectation_2:
+  expected_content: |
+    This is the note content<br />
+    This is the second line
+
+expectation_3:
+  expected_content: "Hey there people, how are you?"
+
+expectation_4:
+  expected_content: |
+    This is the note content<br />
+    This is the second line

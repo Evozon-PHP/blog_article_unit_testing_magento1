@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Evo_ProductNotes>
+            <version>0.0.1</version>
+        </Evo_ProductNotes>
+    </modules>
+
+    <!-- Global configuration -->
+    <global>
+
+        <!-- MODELS -->
+        <models>
+            <evo_productnotes>
+                <class>Evo_ProductNotes_Model</class>
+                <resourceModel>evo_productnotes_resource</resourceModel>
+            </evo_productnotes>
+            <evo_productnotes_resource>
+                <class>Evo_ProductNotes_Model_Resource</class>
+                <!-- TABLES MAPPINGS -->
+                <entities>
+                    <!-- Mapping for the Note entity -->
+                    <notes>
+                        <table>evo_product_notes</table>
+                    </notes>
+                </entities>
+            </evo_productnotes_resource>
+        </models>
+
+        <!-- BLOCKS -->
+        <blocks>
+            <evo_productnotes>
+                <class>Evo_ProductNotes_Block</class>
+            </evo_productnotes>
+        </blocks>
+
+        <!-- HELPERS -->
+        <helpers>
+            <evo_productnotes>
+                <class>Evo_ProductNotes_Helper</class>
+            </evo_productnotes>
+        </helpers>
+
+        <!-- RESOURCES -->
+        <resources>
+            <!-- MODULE SETUP RESOURCE -->
+            <evo_productnotes_setup>
+                <setup>
+                    <module>Evo_ProductNotes</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </evo_productnotes_setup>
+        </resources>
+    </global>
+
+
+    <!-- Frontend configuration -->
+    <frontend>
+
+        <!-- ROUTERS -->
+        <routers>
+            <evo_productnotes>
+                <use>standard</use>
+                <args>
+                    <module>Evo_ProductNotes</module>
+                    <frontName>product_notes</frontName>
+                </args>
+            </evo_productnotes>
+        </routers>
+
+        <!-- LAYOUT UPDATES -->
+        <layout>
+            <updates>
+                <evo_productnotes module="Evo_ProductNotes">
+                    <file>evo/productnotes.xml</file>
+                </evo_productnotes>
+            </updates>
+        </layout>
+    </frontend>
+</config>

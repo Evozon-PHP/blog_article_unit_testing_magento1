@@ -1,0 +1,14 @@
+"empty note content":
+  - ""
+  -
+    "type": "Evo_ProductNotes_Model_Note_Exception"
+    "message": ""
+    "code": 1
+
+"note content too long":
+  - "This note is too long"
+  -
+    "type": "Evo_ProductNotes_Model_Note_Exception"
+    "message": "Note content length 21 exceeds maximum allowed length of 10"
+    "code": 2
+  - 10
